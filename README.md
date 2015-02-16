@@ -1,13 +1,27 @@
 gramobot
 ========
 
-## how to run
+## setup
 
-    make sure you have node, npm, bower and bruch installed
+### configuration
+
+- setup a new twitter app at (https://apps.twitter.com/app/new)
+- setup a mongodb database wherever you want (http://docs.mongodb.org/manual/installation/)
     
-    now just run
-    $   ./install.sh
+- go into `backend/config/`, get rid of the ".example" suffix on those files and enter your own credentials
     
-    and open localhost:3333 in your browser
+### run install script
     
-    if you open channel "test" you can see how gramobot runs with a few fake tweets
+make sure you have 
+- node
+- npm
+- bower
+- bruch 
+installed
+    
+now just run
+$   ./install.sh
+
+and open localhost:3333 in your browser
+
+if you open channel "test" you can see how gramobot runs with a few fake tweets
