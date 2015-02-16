@@ -13,6 +13,7 @@ gramobot
     
 make sure you have 
 - [node](http://nodejs.org/)
+
 installed
     
 now just run
