@@ -22,4 +22,4 @@ if you open channel "test" you can see how gramobot runs with a few fake tweets
 
 ## forks
 
-meteor by @johdirr : https://github.com/johdirr/gramobotMeteor
+meteor version by [johdirr](https://github.com/johdirr): https://github.com/johdirr/gramobotMeteor
