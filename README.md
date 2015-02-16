@@ -20,6 +20,6 @@ and open [localhost:3333](http://localhost:3333/) in your browser
 
 if you open channel "test" you can see how gramobot runs with a few fake tweets
 
-## forks
+# forks
 
 meteor version by [johdirr](https://github.com/johdirr): https://github.com/johdirr/gramobotMeteor
