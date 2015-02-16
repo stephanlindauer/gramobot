@@ -11,14 +11,15 @@ gramobot
     
 ## run install script
     
-make sure you have 
-- [node](http://nodejs.org/)
-
-installed
+make sure you have [node](http://nodejs.org/) installed
     
 now just run
-$   ./install.sh
+`$   ./install.sh`
 
 and open [localhost:3333](http://localhost:3333/) in your browser
 
 if you open channel "test" you can see how gramobot runs with a few fake tweets
+
+## forks
+
+meteor by @johdirr : https://github.com/johdirr/gramobotMeteor
