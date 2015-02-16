@@ -5,7 +5,7 @@ var channelModel = require( "./model/channelModel" )
 Application = {
   initialize: function () {
 
-    $( "#create-channel button" ).click( function () {
+    var handleNewChannel = function () {
 
       var channelName = $( "#create-channel .input" ).text();
 
@@ -18,7 +18,14 @@ Application = {
       $( "#create-channel .input-container .input" ).prop( 'contenteditable', false );
       $( "#channel" ).removeClass( "underfold" );
       $( ".channelName" ).text( channelName );
-    } )
+    }
+
+    $( "#create-channel button" ).click( handleNewChannel );
+    $( "#create-channel .input" ).keypress( function ( e ) {
+      if ( e.which == 13 ) {
+        handleNewChannel();
+      }
+    } );
   }
 };
 
