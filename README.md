@@ -13,15 +13,14 @@ gramobot
 ### run install script
     
 make sure you have 
-- node
-- npm
-- bower
-- bruch 
+- [node](http://nodejs.org/)
+- [bower](http://bower.io/)
+- [bruch](http://brunch.io/) 
 installed
     
 now just run
 $   ./install.sh
 
-and open localhost:3333 in your browser
+and open [localhost:3333](http://localhost:3333/) in your browser
 
 if you open channel "test" you can see how gramobot runs with a few fake tweets
