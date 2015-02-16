@@ -1,0 +1,6 @@
+module.exports = {
+  consumerKey: '<yourTwitterConsumerKey>',
+  consumerSecret: '<yourTwitterConsumerSecret>',
+  accessToken: '<yourTwitterAccessToken>',
+  accessTokenSecret: '<yourTwitterAccessTokenSecret'
+};

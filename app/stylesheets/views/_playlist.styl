@@ -1,0 +1,87 @@
+#playlist {
+  width: 29%;
+  height: 98%;
+  margin 1% 1% 0 0
+  background rgba(255, 255, 255, 0.1)
+  float right
+  overflow hidden
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    position relative
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color rgba(0, 0, 0, 0.4)
+    padding 5px
+
+    div.title {
+      position absolute
+      font-size 17px
+      width 100%
+      margin-top 10px
+      padding-left 130px
+      top 0
+      left 0
+      font-weight bold
+      font-size: 16px;
+      padding-right: 15px;
+      color: #ababab;
+    }
+
+    div.duration {
+      position absolute
+      font-size 15px
+      width 100%
+      margin-bottom 0.4rem
+      padding-left 135px
+      bottom 0
+      left 0
+      white-space nowrap
+      font-weight bold
+      color rgba(100, 100, 100, 1.0)
+    }
+
+    div.votes {
+      position absolute
+      color #fff
+      font-size 15px
+      margin-top 1rem
+      margin-left 1rem
+      font-weight bold
+      top 0
+      left 0
+
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-play-state: running;
+
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-play-state: running;
+    }
+
+    div.votes.even {
+      -webkit-animation-name: updateCountAnimation1;
+      animation-name: updateCountAnimation1;
+    }
+
+    div.votes.odd {
+      -webkit-animation-name: updateCountAnimation2;
+      animation-name: updateCountAnimation2;
+    }
+
+    img {
+      height 90px
+      width  120px
+    }
+  }
+}
+

@@ -1,0 +1,64 @@
+<section id="background">
+</section>
+
+<section id="channel" class="underfold">
+
+    <div id="playlist">
+        <ul id="medias" data-bind="foreach: medias">
+            <li>
+                <img data-bind="attr: { src: thumbnailUrl }" class="thumb" src=""/>
+
+                <div class="title" data-bind="text: title"></div>
+                <div class="votes"
+                     data-bind="text: count, css: { odd: count() % 2 == 1, even: count() % 2 == 0 }"></div>
+                <div class="duration" data-bind="text: duration"></div>
+            </li>
+        </ul>
+    </div>
+
+    <aside id="aside">
+
+        <div id="playerwrapper">
+            <div id="explainer">
+                <p>
+                    send a tweet to @gramobot
+                with the hashtag #<span class="channelName"></span> and your youtube link to for a new song!
+                </p>
+                <p>
+                    here is an example:
+                </p>
+                <p>
+                    "@gramobot #<span class="channelName"></span>
+                    https://www.youtube.com/watch?v=R_tjEIUPrSY party party!"
+                </p>
+            </div>
+        </div>
+
+        <div id="tweet-flow">
+
+            <ul id="tweets" data-bind="foreach: tweets">
+                <li>
+                    <img data-bind="attr: { src: userImage }" class="thumb" src=""/>
+
+                    <div class="userHandle" data-bind="text: userHandle"></div>
+                    <div class="text" data-bind="text: text"></div>
+                </li>
+            </ul>
+
+        </div>
+    </aside>
+</section>
+
+<section id="create-channel">
+    <img src="/images/logo.png">
+
+    <div class="create">create a channel!</div>
+
+    <div class="input-container">
+        <span class="hashtag">#</span>
+
+        <div class="input" contenteditable="true">channel</div>
+        <button></button>
+    </div>
+</section>
+

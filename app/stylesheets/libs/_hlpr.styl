@@ -1,0 +1,275 @@
+.fL
+    float left
+
+.fR
+    float right
+
+/*clearing after floating*/
+.floatL:before
+.floatL:after
+.floatR:before
+.floatR:after
+    clear both
+    content "."
+    display block
+    height 0
+    overflow hidden
+    visibility hidden
+
+.bb
+    -moz-box-sizing border-box
+    box-sizing border-box
+
+/*make an element "disables"*/
+.dis
+    opacity 0.35
+
+.filter-g
+    -webkit-filter grayscale(100%)
+    -moz-filter grayscale(100%)
+    -o-filter grayscale(100%)
+    -ms-filter grayscale(100%)
+    filter grayscale(100%)
+    filter url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter gray;
+
+/* IE6-9 */
+
+.invi-n /*make an element ABSOLUTE invisible*/
+    display none;
+    visibility hidden;
+    height 0
+    width 0
+    opacity 0
+
+.invi-i /*make an element invisible*/
+    visibility hidden
+
+/*opacity: 0;*/
+
+/*make an element hidden*/
+.invi-h
+    display none
+
+/*
+height: 0;
+width: 0;
+*/
+
+/*make an element compressed to zero pixel*/
+.invi-c
+    height 0
+    width 0
+
+/*make an element vertical compressed to zero pixel*/
+.invi-c-v
+    width 0
+
+/*make an element transparent*/
+.invi-t
+    opacity 0
+
+.invi-event
+    opacity 0
+    width 0
+    height 0
+    position absolute
+    z-index -234567
+    left -234567
+
+.hidden
+    display none !important
+
+.transparent
+    background transparent !important
+
+.middle
+    display flex
+
+.middle > *
+    margin auto
+
+.noscript
+    font-family 'Arial', 'Courier', 'sans-serif'
+    color rgb(0, 0, 0)
+
+    width 100%
+    position absolute
+    z-index 21474836
+
+    .noscript > .warning-box
+        width 380px
+        margin 40px auto 0
+        padding 15px
+
+        background-color rgb(229, 61, 61)
+        opacity 0.7
+
+        border-radius 5px
+        box-shadow 0 0 14px -2px rgba(0, 0, 0, 0.8)
+
+        color rgba(250, 250, 250, 0.9)
+        text-shadow 1px 0 0 rgba(158, 53, 53, 0.9)
+
+        .noscript > .warning-box a
+            color rgba(250, 250, 250, 0.9)
+
+        .noscript > .warning-box a:hover
+            color rgba(30, 30, 30, 0.9)
+            box-shadow none
+
+        .noscript > .warning-box > p
+            font-size 14px
+            line-height 18px
+
+        .noscript > .warning-box > span
+            display block
+
+            font-size 12px
+            text-align right
+            font-style italic
+
+.hlpt_unselectable
+    -moz-user-select -moz-none
+    -moz-user-select none
+        -o-user-select none
+
+-khtml-user-select none
+-webkit-user-select none
+    -ms-user-select none
+        user-select none
+
+/* ++++ text styling ++++ */
+.t-b
+    font-weight bold
+
+.t-i
+    font-style italic
+
+.t-u
+    text-decoration underline
+
+.t-up
+    text-transform uppercase
+
+.t-lo
+    text-transform lowercase
+
+.t-right
+    text-align right
+
+.t-teaser
+    text-overflow ellipsis
+    white-space nowrap
+    overflow hidden
+
+/* ------ FUNCTIONS ------ */
+
+_fullscreen()
+    position relative
+    top 0
+    left 0
+    overflow hidden
+    height 100vh
+    width 100vw
+
+/*bottom 0
+right 0*/
+
+_box-shadow()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    box-shadow arguments
+    html.ie8 &,
+    html.ie7 &,
+    html.ie6 &
+        border 2px solid arguments[length(arguments) - 1]
+
+_border-radius(n)
+    -webkit-border-radius n
+    -moz-border-radius n
+    border-radius n
+
+_blur(n)
+    -webkit-filer blur(n)
+    -moz-filter blur(n)
+    filter blur(n)
+
+/*## COLORS ##*/
+_black()
+    rgba(0, 0, 0, 1.0)
+
+_trans()
+    rgba(255, 255, 255, 0.0)
+
+_whity(trans)
+    rgba(255, 255, 255, trans)
+
+_blacky(trans)
+    rgba(0, 0, 0, trans)
+
+_greyish(trans)
+    rgba(128,128,128, trans)
+
+_flex(d = row, w = nowrap)
+    display -webkit-flex
+    display flex
+    _flex-flow(d, w)
+
+_flex-flow(d = row, w = nowrap)
+    _flex-direction(d)
+    _flex-wrap(w)
+
+_flex-wrap(w = nowrap)
+    -webkit-flex-wrap w
+    flex-wrap w
+
+_flex-direction(d = row)
+    -webkit-flex-direction d
+    flex-direction d
+
+_flex-content(j = space-between, c = space-between, a = stretch, g = 1, s = 0, b = auto)
+    _flex-justify-content(j)
+    _flex-align-content(c)
+    _flex-align-items(a)
+
+_flex-justify-content(j = center)
+    -webkit-justify-content j
+    justify-content j
+
+_flex-align-items(a = center)
+    -webkit-align-items a
+    align-items a
+
+_flex-align-content(a = center)
+    -webkit-align-content a
+    align-content a
+
+
+_content-flex(g = 1, s = 0, b = auto, align = auto)
+    if g == none
+        flex none
+        -webkit-flex none
+    else
+        -webkit-flex-grow g
+        flex-grow g
+        -webkit-flex-shrink s
+        flex-shrink s
+        -webkit-flex-basis b
+        flex-basis b
+        -webkit-align-self align
+        align-self align
+
+
+__single-center()
+    _flex(column)
+    _flex-content(center, center, center)
+    _content-flex(1, 0, auto, center)
+
+__resp-img()
+    background-repeat no-repeat
+    background-clip border-box
+    background-size contain
+    background-color rgba(255, 255, 255, 0.0)
+    background-origin padding-box
+    background-position center center
