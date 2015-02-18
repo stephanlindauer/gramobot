@@ -1,6 +1,8 @@
 gramobot
 ========
 
+![screenshot](https://github.com/stephanlindauer/gramobot/blob/master/app/assets/images/screenshots/gramobot_playing.png "screenshot")
+
 # setup
 
 ## configuration
