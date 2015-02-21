@@ -1,7 +1,7 @@
 gramobot
 ========
 
-gramobot is a webapp that makes having house parties more democratic. instead of some asswhole forcing their shitty taste in music on everybody, now people can vote for what song they want to hear next via twitter.
+gramobot is a webapp that makes music selection on house parties more democratic. instead of some asshole forcing their shitty taste in music on everybody, now people can vote for what song they want to hear next via twitter.
 
 here's a sample tweet:
 [https://twitter.com/stephanlindauer/status/569254275332882433](https://twitter.com/stephanlindauer/status/569254275332882433)
