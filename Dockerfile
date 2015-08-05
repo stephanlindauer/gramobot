@@ -11,6 +11,6 @@ ADD . /gramobot/
 
 RUN find .
 
-RUN chmod +x ./gramobot/start.sh
+RUN chmod +x ./gramobot/install.sh
 
 CMD ./gramobot/install.sh
