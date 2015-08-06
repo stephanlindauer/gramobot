@@ -15,4 +15,4 @@ RUN find .
 
 RUN chmod +x ./gramobot/install.sh
 
-CMD ./gramobot/install.sh
+CMD ./gramobot/install.sh 
