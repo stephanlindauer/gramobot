@@ -6,7 +6,7 @@ RUN apt-get --assume-yes update
 RUN apt-get --assume-yes upgrade
 
 RUN apt-get install -y nodejs npm git git-core
-RUN apt-get install nodejs-legacy
+RUN apt-get install nodejs-legacy build-essential libavahi-compat-libdnssd-dev
 RUN echo 'export PATH=$PATH:/usr/local/bin' >> $HOME/.bashrc
 
 RUN npm install -g brunch
