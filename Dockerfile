@@ -9,8 +9,6 @@ RUN apt-get install -y nodejs npm git git-core
 RUN apt-get install nodejs-legacy
 RUN echo 'export PATH=$PATH:/usr/local/bin' >> $HOME/.bashrc
 
-RUN find .
-
 RUN npm install -g brunch
 RUN npm install -g bower
 
