@@ -6,8 +6,8 @@ RUN apt-get --assume-yes update
 RUN apt-get --assume-yes upgrade
 
 RUN apt-get install -y nodejs npm git git-core
-RUN npm install -g brunch
-RUN npm install -g bower
+RUN npm install brunch
+RUN npm install bower
 
 ADD . /gramobot/
 
@@ -15,4 +15,4 @@ RUN find .
 
 RUN chmod +x ./gramobot/install.sh
 
-CMD ./gramobot/install.sh 
+CMD ./gramobot/install.sh
